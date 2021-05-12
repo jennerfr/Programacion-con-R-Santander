@@ -11,7 +11,7 @@
  - [Sesión 3: Análisis Exploratorio de Datos (AED o EDA) con R](Sesion-03/Readme.md)
  - [Sesión 4: Algunas distribuciones, teorema central del límite y contraste de hipótesis](https://github.com/jennerfr/Programacion-con-R-Santander/tree/master/Sesion-04) 
  - [Sesión 5: Regresión lineal y clasificación](https://github.com/jennerfr/Programacion-con-R-Santander/tree/master/Sesion-05) 
- - [Sesión 6: Series de tiempo](Sesion-06/Readme.md)
+ - [Sesión 6: Series de tiempo](https://github.com/jennerfr/Programacion-con-R-Santander/tree/master/Sesion-06)
  - [Sesión 7: RStudio Cloud - Github, conexiones con BDs y lectura de datos externos](Sesion-07/Readme.md) 
  - [Sesión 8: Dashboards con Shiny - Entorno GUI](Sesion-08/Readme.md)
 
