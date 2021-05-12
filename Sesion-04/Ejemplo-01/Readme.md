@@ -213,6 +213,8 @@ title(main = "Densidad de Probabilidad Normal", sub = expression(paste(mu == 175
 axis(side = 1, at = b, font = 2, padj = 1, lwd = 2)
 ```
 
+![CuantilNormal](https://user-images.githubusercontent.com/50311949/118018464-70091900-b31d-11eb-8fc8-196b32d89a03.png)
+
 #### Muestras aleatorias
 
 Para generar una muestra aleatoria de tamaño n = 1000 de la v.a. X corremos la siguiente instrucción
