@@ -232,35 +232,6 @@ ggplot(mdf, aes(muestra)) +
   theme(plot.title = element_text(hjust = 0.5, size = 16))  
 ```
 
-#### Regla empírica
-
-```R
-mean <- 175; sd <- 6
-x <- seq(mean-4*sd, mean+4*sd, 0.01)
-y <- dnorm(x, mean, sd)
-plot(x, y, type = "l", xlab="valores", ylab = "", xaxt = "n", yaxt = "n")
-title(main = "Densidad de Probabilidad Normal", sub = expression(paste("Regla Empírica con ", mu == 175, " y ", sigma == 6)))
-abline(v=mean, lty = 2, lwd = 2)
-for(k in c(-3, -2, -1, 1, 2, 3)) abline(v = mean+k*sd, lty = 2, col = abs(k))
-ps <- c(mean - 3*sd, mean - 2*sd, mean - sd, mean, mean + sd, mean + 2*sd, mean + 3*sd)
-axis(side = 1, at = ps)
-x0 <- NULL
-for(i in 1:length(ps)-1) x0 <- c(x0, (ps[i]+ps[i+1])/2)
-y0 <- dnorm(x0, mean, sd)*1/3
-text(x = x0, y = y0, labels = c("2.35%", "13.5%", "34%", "34%", "13.5%", "2.35%"))
-x1 <- (x[1]+ps[1])/2; y1 <- dnorm(mean, mean, sd)*1/2
-xf <- (x[length(x)]+ps[length(ps)])/2; yf <- dnorm(mean, mean, sd)*1/2
-text(x = c(x1, xf), y = c(y1, yf), labels = c("0.15%", "0.15%"))
-segments(x0 = x1, y0 = 0, x1 = x1, y1 = y1,               # Draw one line as in Example 1
-         col = "cornflowerblue",                               # Color of line
-         lwd = 5,                                              # Thickness of line
-         lty = "dotted")     
-segments(x0 = xf, y0 = 0, x1 = xf, y1 = yf,               
-         col = "cornflowerblue",                               
-         lwd = 5,                                              
-         lty = "dotted")     
-```
-
 #### Distribución t de Student
 
 En `R` para calcular valores de las funciones de densidad, distribución o cuantiles de la distribución t de Student (continua), usamos las funciones `dt`, `pt` y  `qt` respectivamente. Para generar muestras aleatorias de esta distribución utilizamos la función `rt`.
