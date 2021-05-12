@@ -314,6 +314,8 @@ plot(x, y, type = "l", main = "Densidad t de Student, gl = 7", xlab="", ylab="")
 axis(side = 1, at = d, font = 2, padj = 1, lwd = 2)
 ```
 
+![Student3](https://user-images.githubusercontent.com/50311949/118020024-46e98800-b31f-11eb-8e94-b44d8bd027e3.png)
+
 #### Muestras aleatorias
 
 Para generar una muestra aleatoria de tamaño n = 1000 de la v.a. T corremos la siguiente instrucción
@@ -340,3 +342,5 @@ ggplot(mdf, aes(muestra)) +
   theme_light() +
   theme(plot.title = element_text(hjust = 0.5, size = 16))  
 ```
+
+![HistogramaStudent](https://user-images.githubusercontent.com/50311949/118020192-6d0f2800-b31f-11eb-9c38-3db6201909f4.png)
