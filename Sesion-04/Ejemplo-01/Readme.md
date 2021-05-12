@@ -269,12 +269,14 @@ Para encontrar P(T <= 1.5), ejecutamos la siguiente instrucción
 pt(q = 1.5, df = 7)
 ```
 
-Observemos la región que corresponde a esta probabilidad en la siguiente gráfica
+Observemos el área que corresponde a esta probabilidad en la siguiente gráfica
 
 ```R
 plot(x, y, type = "l", main = "Densidad t de Student, gl = 7", xlab="", ylab="")
 polygon(c(min(x), x[x<=1.5], 1.5), c(0, y[x<=1.5], 0), col="purple")
 ```
+
+![Student1](https://user-images.githubusercontent.com/50311949/118019564-bdd25100-b31e-11eb-8534-93c7c704a2d8.png)
 
 Para encontrar P(T >= 2), ejecutamos
 
@@ -282,12 +284,14 @@ Para encontrar P(T >= 2), ejecutamos
 pt(q = 2, df = 7, lower.tail = FALSE)
 ```
 
-Observemos la región que corresponde a esta probabilidad en la siguiente gráfica
+Observemos el área que corresponde a esta probabilidad en la siguiente gráfica
 
 ```R
 plot(x, y, type = "l", main = "Densidad t de Student, gl = 7", xlab="", ylab="")
 polygon(c(2, x[x>=2], max(x)), c(0, y[x>=2], 0), col="orange")
 ```
+
+![Student2](https://user-images.githubusercontent.com/50311949/118019752-f5d99400-b31e-11eb-8a59-d33dbe1325fd.png)
 
 #### Cuantiles
 
