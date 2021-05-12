@@ -242,6 +242,8 @@ ggplot(mdf, aes(muestra)) +
   theme(plot.title = element_text(hjust = 0.5, size = 16))  
 ```
 
+![HistogramaNormal](https://user-images.githubusercontent.com/50311949/118018751-cf672900-b31d-11eb-80e0-2049a5374bd0.png)
+
 #### Distribución t de Student
 
 En `R` para calcular valores de las funciones de densidad, distribución o cuantiles de la distribución t de Student (continua), usamos las funciones `dt`, `pt` y  `qt` respectivamente. Para generar muestras aleatorias de esta distribución utilizamos la función `rt`.
