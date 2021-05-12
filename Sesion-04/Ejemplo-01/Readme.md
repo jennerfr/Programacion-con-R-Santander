@@ -101,7 +101,8 @@ Las frecuencias relativas son muy parecidas a las probabilidades.
 
 ```R
 ggplot(df2, aes(x = Exitos, y = value, fill = variable)) + 
-  geom_bar (stat="identity", position = "dodge") # Funciones del paquete ggplot2
+  geom_bar (stat="identity", position = "dodge") + # Funciones del paquete ggplot2
+  labs(y = "Frecuencia relativa / Probabilidad")
 ```
 
 #### Distribución normal
