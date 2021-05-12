@@ -125,6 +125,8 @@ title(main = "Densidad de Probabilidad Normal", sub = expression(paste(mu == 175
 abline(v = 175, lwd = 2, lty = 2) # La media es 175 
 ```
 
+![NormalDensity](https://user-images.githubusercontent.com/50311949/118017644-7a76e300-b31c-11eb-9f88-55a39e891950.png)
+
 #### Función de distribución
 
 Para obtener P(X <= 180), es decir, la probabilidad de que X tome un valor menor o igual a 180, ejecutamos
