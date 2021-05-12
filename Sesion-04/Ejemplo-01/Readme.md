@@ -102,7 +102,8 @@ Las frecuencias relativas son muy parecidas a las probabilidades.
 ```R
 ggplot(df2, aes(x = Exitos, y = value, fill = variable)) + 
   geom_bar (stat="identity", position = "dodge") + # Funciones del paquete ggplot2
-  labs(y = "Frecuencia relativa / Probabilidad")
+  labs(y = "Frecuencia relativa / Probabilidad", 
+       title = "Algunos valores para la binomial con n = 30 y p = 0.2")
 ```
 
 ![Binomial](https://user-images.githubusercontent.com/50311949/118016922-9b8b0400-b31b-11eb-941a-67965164739b.png)
