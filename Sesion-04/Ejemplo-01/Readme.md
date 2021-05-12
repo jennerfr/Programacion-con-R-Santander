@@ -105,7 +105,7 @@ ggplot(df2, aes(x = Exitos, y = value, fill = variable)) +
   labs(y = "Frecuencia relativa / Probabilidad")
 ```
 
-![Binomial](https://user-images.githubusercontent.com/50311949/118016089-9a0d0c00-b31a-11eb-8763-e63ba8c16e46.png)
+![Binomial](https://user-images.githubusercontent.com/50311949/118016922-9b8b0400-b31b-11eb-941a-67965164739b.png)
 
 #### Distribución normal
 
