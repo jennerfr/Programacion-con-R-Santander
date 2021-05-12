@@ -105,6 +105,8 @@ ggplot(df2, aes(x = Exitos, y = value, fill = variable)) +
   labs(y = "Frecuencia relativa / Probabilidad")
 ```
 
+![Binomial](https://user-images.githubusercontent.com/50311949/118016089-9a0d0c00-b31a-11eb-8763-e63ba8c16e46.png)
+
 #### Distribución normal
 
 En `R` para calcular valores de las funciones de densidad, distribución o cuantiles de la distribución normal (continua), usamos las funciones `dnorm`, `pnorm` y  `qnorm` respectivamente. Para generar muestras aleatorias de esta distribución utilizamos la función `rnorm`.
