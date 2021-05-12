@@ -259,6 +259,8 @@ plot(x, y, type = "l", main = "Densidad t de Student, gl = 7", xlab="", ylab="")
 abline(v = 0, lwd=2, lty=2)
 ```
 
+![DensidadStudent](https://user-images.githubusercontent.com/50311949/118019322-78ae1f00-b31e-11eb-8dc3-08d29ce188e2.png)
+
 #### Función de distribución
 
 Para encontrar P(T <= 1.5), ejecutamos la siguiente instrucción
