@@ -189,6 +189,8 @@ polygon(c(182, x[x>=182], max(x)), c(0, y[x>=182], 0), col="blue")
 dev.off() # Para mostrar solo una gráfica
 ```
 
+![Normales](https://user-images.githubusercontent.com/50311949/118018176-14d72680-b31d-11eb-9eed-6057e2f2c9ba.png)
+
 #### Cuantiles
 
 Para encontrar el número b, tal que P(X <= b) = 0.75, es decir, el cuantil de orden 0.75, ejecutamos
