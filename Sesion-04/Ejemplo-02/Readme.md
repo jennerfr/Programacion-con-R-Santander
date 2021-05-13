@@ -30,6 +30,8 @@ text(x = 1, y = 1, labels = expression("E(X) = " ~ 1/lambda == 1/2), col = 2)
 text(x = 3, y = 0.5, labels = expression("DE(X) = " ~ 1/lambda == 1/2), col = 4)
 ```
 
+![Exp](https://user-images.githubusercontent.com/50311949/118197269-349d4600-b414-11eb-8e26-5a7fa66a3789.png)
+
 Ahora obtenemos una muestra aleatoria de tamaño n = 4 de la distribución exponencial considerada 
 
 ```R
@@ -82,6 +84,8 @@ ggplot(mdf, aes(media1000.7)) +
   theme(plot.title = element_text(hjust = 0.5, size = 16)) 
 ```
 
+![hist7](https://user-images.githubusercontent.com/50311949/118197383-73cb9700-b414-11eb-973d-9ad5d60ae5ae.png)
+
 ```R
 mean(media1000.7); 1/2 # Media de las 1000 medias y media de la población de la cual vienen las 1000 muestras
 sd(media1000.7); (1/2)/sqrt(7) # DE de las 1000 medias y DE de la población de la cual vienen las 1000 muestras dividida por la raíz del tamaño de la muestra
@@ -110,6 +114,8 @@ ggplot(mdf, aes(media1000.33)) +
   theme_get() +
   theme(plot.title = element_text(hjust = 0.5, size = 16)) 
 ```
+
+![hist33](https://user-images.githubusercontent.com/50311949/118197481-a83f5300-b414-11eb-855b-fa0475a0013d.png)
 
 ```R
 mean(media1000.33); 1/2 # Media de las 1000 medias y media de la población de la cual vienen las 1000 muestras
