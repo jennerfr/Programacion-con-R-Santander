@@ -176,7 +176,7 @@ muestra <- rnorm(n = 15, mean = 175, sd = 6)
 tail(as.data.frame(muestra))
 ```
 
-estamos interesados en contrastar las hipótesis H0: $\mu$ = 170 *vs* H1: mu > 170 (contraste de cola superior)
+estamos interesados en contrastar las hipótesis H0: \\[\mu\\] $\mu$ = 170 *vs* H1: mu > 170 (contraste de cola superior)
 
 El valor observado del estadístico de prueba en este caso está dado por
 
