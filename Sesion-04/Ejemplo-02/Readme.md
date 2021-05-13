@@ -70,7 +70,7 @@ mdf <- as.data.frame(media1000.7)
 tail(mdf)
 ```
 
-Observamos que el histograma de las medias tiene forma de campana
+Observamos que el histograma de las medias tiene aproximadamente forma de campana
 
 ```R
 ggplot(mdf, aes(media1000.7)) + 
