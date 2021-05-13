@@ -1,4 +1,4 @@
-# EJEMPLO 4. Contraste de hipótesis
+# EJEMPLO 3. Contraste de hipótesis
 
 #### Objetivo
 
