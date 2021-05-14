@@ -17,7 +17,7 @@ muestra <- c(V1 = 13, V2 = 17, V3 = 20, V4 = 17, V5 = 20, V6 = 20, V7 = 18, V8 =
              V11 = 13, V12 = 17, V13 = 15, V14 = 19, V15 = 16, V16 = 19, V17 = 22, V18 = 10, V19 = 13, V20 = 21)
 ```
 
-¿La evidencia contradice lo dicho por el vicepresidente? Use una prueba con nivel \(alpha = 0.05\).
+¿La evidencia contradice lo dicho por el vicepresidente? Use una prueba con nivel alpha = 0.05.
 
 1. Establezca las hipótesis nula y alternativa. ¿Es una prueba de cola superior, de cola inferior o de dos colas?
 2. Decida si rechazar o no la hipótesis nula si el nivel de significancia es alpha = 0.05
