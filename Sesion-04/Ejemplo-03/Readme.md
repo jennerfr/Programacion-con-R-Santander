@@ -221,6 +221,8 @@ polygon(c(t0, x[x>=t0], max(x)), c(0, y[x>=t0], 0), col="red")
 axis(side = 1, at = t0, font = 2, padj = 1, lwd = 2)
 ```
 
+![pvalue3](https://user-images.githubusercontent.com/50311949/118203929-b300e480-b422-11eb-974b-ac79257e4966.png)
+
 ```R
 t.test(x = muestra,
        alternative = "greater",
