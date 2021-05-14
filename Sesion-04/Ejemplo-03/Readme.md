@@ -25,7 +25,7 @@ muestra <- rexp(n = 40, rate = 6) # media = 1/6 aprox 0.1667 (media de la poblac
 tail(as.data.frame(muestra))
 ```
 
-estamos interesados en contrastar las hipótesis H0: mu = 0.1 *vs* H1: mu > 0.1 (contraste de cola superior)
+estamos interesados en contrastar las hipótesis H<sub>0</sub>: mu = 0.1 *vs* H<sub>1</sub>: mu > 0.1 (contraste de cola superior)
 
 El valor observado del estadístico de prueba en este caso está dado por
 
@@ -164,7 +164,7 @@ polygon(c(z0, x[x>=z0], max(x)), c(0, y[x>=z0], 0), col="purple")
 axis(side = 1, at = z0, font = 2, padj = 1, lwd = 2)
 ```
 
-#### Contraste de hipótesis con muestras pequeñas para \[\mu\] y mu1 - mu2
+#### Contraste de hipótesis con muestras pequeñas para \\[\mu\\] y mu1 - mu2
 
 #### Contraste de cola superior
 
@@ -176,7 +176,7 @@ muestra <- rnorm(n = 15, mean = 175, sd = 6)
 tail(as.data.frame(muestra))
 ```
 
-estamos interesados en contrastar las hipótesis H0: \[\mu\] = 170 *vs* H1: mu > 170 (contraste de cola superior)
+estamos interesados en contrastar las hipótesis H0: \\[\mu\\] = 170 *vs* H1: mu > 170 (contraste de cola superior)
 
 El valor observado del estadístico de prueba en este caso está dado por
 
