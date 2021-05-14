@@ -223,6 +223,8 @@ axis(side = 1, at = t0, font = 2, padj = 1, lwd = 2)
 
 ![pvalue3](https://user-images.githubusercontent.com/50311949/118203929-b300e480-b422-11eb-974b-ac79257e4966.png)
 
+__También podemos usar la función `t.test` para llevar a cabo el procedimiento de contraste de hipótesis__
+
 ```R
 t.test(x = muestra,
        alternative = "greater",
@@ -272,6 +274,8 @@ rechazamos la hipótesis nula.
 ```R
 (pvalue <- 2*pt(t0, df = 41, lower.tail = FALSE))
 ```
+
+__También podemos usar la función `t.test` para llevar a cabo el procedimiento de contraste de hipótesis__
 
 ```R
 t.test(x = m1, y = m2,
