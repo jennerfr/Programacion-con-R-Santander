@@ -11,7 +11,7 @@
 
 #### Desarrollo
 
-#### *Nota: con cubrir un tipo de contraste es suficiente, ya que las ideas son similares en los diferentes tipos de contrastes de hipótesis*
+#### *Nota: con cubrir un tipo de contraste es suficiente, ya que las ideas son similares en los diferentes tipos de contrastes de hipótesis. Por cuestiones de tiempo, se recomienda hacer un único ejemplo en clase.*
 
 #### Contrastes comunes con muestras grandes
 
