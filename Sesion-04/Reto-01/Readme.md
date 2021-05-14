@@ -1,4 +1,4 @@
-# RETO 1. Distribución normal.
+# RETO 1. Distribución normal
 
 #### Objetivo
 
