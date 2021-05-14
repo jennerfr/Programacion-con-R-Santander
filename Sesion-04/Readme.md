@@ -14,6 +14,7 @@ Estudiar algunas distribuciones de probabilidad muy comunes y útiles, obtener e
 - [Ejemplo 1](https://github.com/jennerfr/Programacion-con-R-Santander/tree/master/Sesion-04/Ejemplo-01) Distribuciones normal y t de Student
 - [Reto 1](https://github.com/jennerfr/Programacion-con-R-Santander/tree/master/Sesion-04/Reto-01) Distribución normal
 - [Ejemplo 2](https://github.com/jennerfr/Programacion-con-R-Santander/tree/master/Sesion-04/Ejemplo-02) Teorema central del límite
+- [Reto 2] Teorema central del límite
 - [Ejemplo 3](https://github.com/jennerfr/Programacion-con-R-Santander/tree/master/Sesion-04/Ejemplo-03) Contraste de hipótesis
 - [Reto 3](https://github.com/jennerfr/Programacion-con-R-Santander/tree/master/Sesion-04/Reto-03) Contraste de hipótesis
 
