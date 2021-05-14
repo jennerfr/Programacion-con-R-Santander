@@ -45,7 +45,7 @@ pnorm(q = 180, mean = 175, sd = 6)
 par(mfrow = c(2, 2))
 ```
 
-Observemos la región que corresponde a esta probabilidad en la siguiente gráfica en color rojo
+Observemos el área que corresponde a esta probabilidad en la siguiente gráfica en color rojo
 
 ```R
 plot(x, y, type = "l", xlab = "", ylab = "")
@@ -59,7 +59,7 @@ Para obtener P(X <= 165), es decir, la probabilidad de que X tome un valor menor
 pnorm(q = 165, mean = 175, sd = 6)
 ```
 
-Observemos la región que corresponde a esta probabilidad en la siguiente gráfica en color amarillo
+Observemos el área que corresponde a esta probabilidad en la siguiente gráfica en color amarillo
 
 ```R
 plot(x, y, type = "l", xlab = "", ylab = "")
@@ -73,7 +73,7 @@ Para obtener P(165 <= X <= 180), es decir, la probabilidad de que X tome un valo
 pnorm(q = 180, mean = 175, sd = 6) - pnorm(q = 165, mean = 175, sd = 6)
 ```
 
-Observemos la región que corresponde a esta probabilidad en la siguiente gráfica en color verde
+Observemos el área que corresponde a esta probabilidad en la siguiente gráfica en color verde
 
 ```R
 plot(x, y, type = "l", xlab="", ylab="")
@@ -87,7 +87,7 @@ Para obtener P(X >= 182), es decir, la probabilidad de que X tome un valor mayor
 pnorm(q = 182, mean = 175, sd = 6, lower.tail = FALSE)
 ```
 
-Observemos la región que corresponde a esta probabilidad en la siguiente gráfica en color azul
+Observemos el área que corresponde a esta probabilidad en la siguiente gráfica en color azul
 
 ```R
 plot(x, y, type = "l", xlab="", ylab="")
