@@ -7,7 +7,6 @@ Estudiar algunas distribuciones de probabilidad muy comunes y útiles, obtener e
 - Cálculo de probabilidades y cuantiles de las distribuciones binomial, normal y t de Student
 - Generación de muestras aleatorias de las distribuciones estudiadas
 - Estudio del teorema central del límite mediante simulaciones
-- Propiedades de algunos estimadores puntuales insesgados comunes
 - Contraste de hipótesis con muestras grandes y pequeñas
 
 #### Los ejemplos y retos de esta sesión 4 son los siguientes:
