@@ -78,7 +78,7 @@ muestra <- sample(x = c(1, 0), size = 45, replace = TRUE, prob = c(0.67, 0.33));
 tail(as.data.frame(muestra))
 ```
 
-estamos interesados en contrastar las hipótesis H0: p = 0.9 *vs* H1: p < 0.9 (contraste de cola inferior)
+estamos interesados en contrastar las hipótesis H<sub>0</sub>: p = 0.9 *vs* H<sub>1</sub>: p < 0.9 (contraste de cola inferior)
 
 El valor observado del estadístico de prueba en este caso está dado por
 
@@ -122,7 +122,7 @@ tail(as.data.frame(m2))
 1/4.1-1/3.4 # diferencia de medias real
 ```
 
-estamos interesados en contrastar las hipótesis H0: mu1-mu2 = 0 *vs* H1: mu1-mu2 diferente de 0 (contraste de dos colas)
+estamos interesados en contrastar las hipótesis H<sub>0</sub>: mu1-mu2 = 0 *vs* H<sub>1</sub>: mu1-mu2 diferente de 0 (contraste de dos colas)
 
 El valor observado del estadístico de prueba en este caso está dado por
 
@@ -244,7 +244,7 @@ tail(as.data.frame(m2))
 175-160 # diferencia de medias real
 ```
 
-estamos interesados en contrastar las hipótesis H0: mu1-mu2 = 0 *vs* H1: mu1-mu2 diferente de 0 (contraste de dos colas)
+estamos interesados en contrastar las hipótesis H<sub>0</sub>: mu1-mu2 = 0 *vs* H<sub>1</sub>: mu1-mu2 diferente de 0 (contraste de dos colas)
 
 El valor observado del estadístico de prueba en este caso está dado por
 
