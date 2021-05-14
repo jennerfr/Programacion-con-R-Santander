@@ -166,6 +166,8 @@ polygon(c(z0, x[x>=z0], max(x)), c(0, y[x>=z0], 0), col="purple")
 axis(side = 1, at = z0, font = 2, padj = 1, lwd = 2)
 ```
 
+![pvalue2](https://user-images.githubusercontent.com/50311949/118203683-2a824400-b422-11eb-9118-b40ea3779706.png)
+
 #### Contraste de hipótesis con muestras pequeñas para \\[\mu\\] y mu1 - mu2
 
 #### Contraste de cola superior
