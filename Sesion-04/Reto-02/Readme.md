@@ -1,1 +1,1 @@
-# Reto 2. Teorema central del límite
+# RETO 2. Teorema central del límite
