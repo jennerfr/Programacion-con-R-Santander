@@ -66,6 +66,8 @@ polygon(c(z0, x[x>=z0], max(x)), c(0, y[x>=z0], 0), col="red")
 axis(side = 1, at = z0, font = 2, padj = 1, lwd = 2)
 ```
 
+![pvalue1](https://user-images.githubusercontent.com/50311949/118203428-adef6580-b421-11eb-829f-c5c17356e36f.png)
+
 #### Contraste de cola inferior
 
 Dada una muestra aleatoria de tamaño n = 45
