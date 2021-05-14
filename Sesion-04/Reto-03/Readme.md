@@ -23,3 +23,5 @@ muestra <- c(V1 = 13, V2 = 17, V3 = 20, V4 = 17, V5 = 20, V6 = 20, V7 = 18, V8 =
 2. Decida si rechazar o no la hipótesis nula si el nivel de significancia es alpha = 0.05
 3. Obtenga el p-value de la prueba
 4. Lleve a cabo la prueba con la función `t.test`
+
+Inspirado en Wackerly, D. et al. (2010). Estadística Matemática con Aplicaciones. Cengage Learning Editores, S.A. de C.V.
