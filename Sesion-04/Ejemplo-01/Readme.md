@@ -13,7 +13,7 @@
 #### Desarrollo
 
 ```R
-library(ggplot2) # Utilizaremos estos paquetes para algunas gráficas
+library(ggplot2) # Utilizaremos este paquete para algunas gráficas
 ```
 
 #### Distribución normal
