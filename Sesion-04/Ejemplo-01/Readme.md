@@ -1,112 +1,20 @@
-# EJEMPLO 1. Distribuciones binomial, normal y t de Student
+# EJEMPLO 1. Distribuciones normal y t de Student
 
 #### Objetivo
 
-- Aprender a obtener probabilidades, cuantiles y muestras aleatorias relacionadas con las distribuciones binomial, normal y t de Student
-- Intepretar las probabilidades cuando se consideran las gráficas de las funciones de probabilidad y de densidad
+- Aprender a obtener probabilidades, cuantiles y muestras aleatorias relacionadas con las distribuciones normal y t de Student
+- Intepretar las probabilidades cuando se consideran las gráficas de las funciones de densidad
 
 #### Requisitos
 
-- Tener R y RStudio instalado
+- Tener `R` y RStudio instalado
 - Haber leído el Prework
 
 #### Desarrollo
 
 ```R
 library(ggplot2) # Utilizaremos estos paquetes para algunas gráficas
-library(reshape2)
 ```
-
-#### Distribución binomial
-
-En `R` para calcular valores de las funciones de probabilidad, distribución o cuantiles de la distribución binomial (discreta), usamos las funciones `dbinom`, `pbinom` y  `qbinom` respectivamente. Para generar muestras aleatorias de esta distribución utilizamos la función `rbinom`.
-
-Consideremos un experimento binomial con n = 30 pruebas idénticas e independientes, en donde la probabilidad de éxito en cada prueba es p = 0.2 (parámetros n = 30 y p = 0.2)
-
-1. Suponga que realiza un examen de opción múltiple con 30 preguntas, en donde
-cada pregunta tiene 5 posibles respuestas, pero solo una es correcta siempre. Si
-elige la respuesta al azar en cada pregunta, y estamos interesados en el número
-de respuestas correctas obtenidas al final ¿Podemos decir que estamos ante un
-experimento binomial?
-
-#### Función de probabilidad
-
-Para obtener P(X = 20), es decir, la probabilidad de observar 20 éxitos exactamente, en `R` ejecutamos
-
-```R
-dbinom(x = 20, size = 30, prob = 0.2)
-```
-
-#### Función de distribución
-
-Para obtener P(X <= 20), es decir, la probabilidad de observar a lo más 20 éxitos, en `R` corremos
-
-```R
-pbinom(q = 20, size = 30, prob = 0.2)
-```
-
-Para encontrar el valor más pequeño b tal que P(X <= b) >= 0.35, es decir, el cuantil de orden 0.35, usamos
-
-#### Cuantiles
-
-```R
-qbinom(p = 0.35, size = 30, prob = 0.2) # b = 5
-
-pbinom(q = 4, size = 30, prob = 0.2) # P(X <= 4) = 0.2552 < 0.35
-pbinom(q = 5, size = 30, prob = 0.2) # P(X <= 5) = 0.4275 >= 0.35
-pbinom(q = 6, size = 30, prob = 0.2) # P(X <= 6) = 0.6070 >= 0.35
-```
-
-#### Muestras aleatorias
-
-Para obtener una muestra aleatoria de tamaño n = 1000, de la distribución binomial con parámetros como especificamos, hacemos
-
-```R
-set.seed(4857) # Establecemos una semilla, para poder reproducir la muestra en el futuro
-muestra <- rbinom(n = 1000, size = 30, prob = 0.2)
-length(muestra); muestra[1:3]
-```
-
-Podemos observar las frecuencias absolutas de los distintos valores obtenidos
-
-```R
-as.data.frame(table(muestra))
-```
-
-También podemos observar las frecuencias relativas
-
-```R
-(df1 <- as.data.frame(table(muestra)/length(muestra)))
-
-valg <- as.character(df1$muestra) # distintos valores generados por rbinom
-(valg <- as.numeric(valg)) # Convertimos a números
-```
-
-Las frecuencias relativas son muy parecidas a las siguientes probabilidades
-
-```R
-(v1 <- round(sapply(valg, dbinom, size = 30, p = 0.2), 3))
-```
-
-Combinamos `df1` y `v1` en un único data frame
-
-```R
-(df2 <- cbind(df1, v1))
-(names(df2) <- c("Exitos", "FR", "Prob"))
-
-(df2 <- melt(df2)) # función del paquete reshape2
-```
-
-Las frecuencias relativas son muy parecidas a las probabilidades.
-
-```R
-ggplot(df2, aes(x = Exitos, y = value, fill = variable)) + 
-  geom_bar (stat="identity", position = "dodge") + # Funciones del paquete ggplot2
-  labs(y = "Frecuencia relativa / Probabilidad", 
-       title = "Algunos valores para la binomial con n = 30 y p = 0.2")
-```
-
-![Binomial](https://user-images.githubusercontent.com/50311949/118016922-9b8b0400-b31b-11eb-941a-67965164739b.png)
 
 #### Distribución normal
 
