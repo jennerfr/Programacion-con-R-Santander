@@ -150,11 +150,11 @@ plot(Decor, StanRes2, ylab = "Residuales Estandarizados")
 plot(East, StanRes2, ylab = "Residuales Estandarizados")
 ```
 
-Buscamos evidencia para soportar la hipótesis de normalidad en los errores 
+Buscamos evidencia para soportar la suposición de normalidad en los errores 
 
 ```R
-qqnorm(StanRes1)
-qqline(StanRes1)
+qqnorm(StanRes2)
+qqline(StanRes2)
 
 dev.off()
 ```
