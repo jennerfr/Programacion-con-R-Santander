@@ -1,4 +1,4 @@
-# Ejemplo 3. Máquinas de vectores de soporte (Compañía de tarjetas de crédito)
+# Ejemplo 2. Máquinas de vectores de soporte (Compañía de tarjetas de crédito)
 
 #### Objetivo
 
