@@ -1,4 +1,4 @@
-# Ejemplo 2. Regresión Lineal Múltiple
+# Ejemplo 1. Regresión Lineal Múltiple
 
 #### Objetivo
 
