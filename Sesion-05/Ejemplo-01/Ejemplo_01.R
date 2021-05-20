@@ -1,4 +1,4 @@
-# Ejemplo 2. Regresión Lineal Múltiple
+# Ejemplo 1. Regresión Lineal Múltiple
 
 # Predecir el precio de cena (platillo). 
 # Datos de encuestas de clientes de 168 restaurantes Italianos
