@@ -1,5 +1,5 @@
 
-# Sesion 5. Regresión lineal y clasificación.
+# Sesion 5. Regresión lineal múltiple y clasificación.
 
 #### Objetivo 
 
