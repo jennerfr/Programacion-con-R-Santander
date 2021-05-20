@@ -30,9 +30,18 @@ nyc <- read.csv("nyc.csv", header = TRUE)
 Observamos algunas filas y la dimensión del data frame
 
 ```R
-head(nyc, 2); tail(nyc, 2); dim(nyc)
+tail(nyc, 2) 
+dim(nyc)
 attach(nyc)
 ```
+
+Acontinuación mostramos una matriz de gráficos de dispersión de los tres predictores continuos y la variable de respuesta. 
+
+```R
+pairs(~ Price + Food + Decor + Service, data = nyc, gap = 0.4, cex.labels = 1.5)
+```
+
+Observamos relaciones aproximadamente lineales.
 
 Llevamos a cabo el ajuste de un modelo Y = beta0 + beta1*Food + beta2*Decor + beta3*Service + beta4*East + e
 
@@ -114,31 +123,40 @@ Cuando estas condiciones se cumplen, la gráfica de Y contra los valores ajustad
 
 Ahora tratemos de verificar si el modelo ajustado es un modelo válido.
 
-Acontinuación mostramos una matriz de gráficos de dispersión de los tres predictores continuos. Los predictores parecen estar linealmente relacionados al menos aproximadamente
+```R
+summary(m2)
+```
+
+Mostramos una gráfica de Y, el precio contra los valores ajustados 
 
 ```R
-pairs(~ Food + Decor + Service, data = nyc, gap = 0.4, cex.labels = 1.5)
+plot(m2$fitted.values, Price, xlab = "Valores ajustados", ylab = "Price")
+abline(lsfit(m2$fitted.values, Price))
+```
+
+Acontinuación mostramos una matriz de gráficos de dispersión de los dos predictores continuos. Los predictores parecen estar linealmente relacionados al menos aproximadamente
+
+```R
+pairs(~ Food + Decor, data = nyc, gap = 0.4, cex.labels = 1.5)
 ```
 
 Acontinuación veremos gráficas de residuales estandarizados contra cada predictor. La naturaleza aleatoria de estas gráficas es un indicativo de que el modelo ajustado es un modelo válido para los datos.
 
 ```R
-m1 <- lm(Price ~ Food + Decor + Service + East)
-summary(m1)
-StanRes1 <- rstandard(m1)
+StanRes2 <- rstandard(m2)
 par(mfrow = c(2, 2))
-plot(Food, StanRes1, ylab = "Residuales Estandarizados")
-plot(Decor, StanRes1, ylab = "Residuales Estandarizados")
-plot(Service, StanRes1, ylab = "Residuales Estandarizados")
-plot(East, StanRes1, ylab = "Residuales Estandarizados")
-dev.off()
+plot(Food, StanRes2, ylab = "Residuales Estandarizados")
+plot(Decor, StanRes2, ylab = "Residuales Estandarizados")
+plot(East, StanRes2, ylab = "Residuales Estandarizados")
 ```
 
-Finalmente mostramos una gráfica de Y, el precio contra los valores ajustados 
+Buscamos evidencia para soportar la hipótesis de normalidad en los errores 
 
 ```R
-plot(m1$fitted.values, Price, xlab = "Valores ajustados", ylab = "Price")
-abline(lsfit(m1$fitted.values, Price))
+qqnorm(StanRes1)
+qqline(StanRes1)
+
+dev.off()
 ```
 
 #### Inspirado en la siguiente bibliografía:
