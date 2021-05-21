@@ -1,6 +1,6 @@
 # Sesión 4. Algunas distribuciones, teorema central del límite y contraste de hipótesis
 
-Estudiar algunas distribuciones de probabilidad muy comunes y útiles, obtener estimaciones puntuales con propiedades deseables utilizando algunos estimadores insesgados comunes. Llevar a cabo contrastes de hipótesis que ayuden a tomar decisiones.
+Estudiar algunas distribuciones de probabilidad muy comunes y útiles. Llevar a cabo contrastes de hipótesis que ayuden a tomar decisiones.
 
 #### En esta sesión estudiaremos temas relacionados con los siguientes puntos
 
