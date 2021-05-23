@@ -16,7 +16,6 @@ En este ejemplo se hará la visualización y descomposición de series de tiempo
 Datos de pasajeros aéreos (en miles) de una aerolínea
 
 ```R
-data(AirPassengers)
 AP <- AirPassengers
 AP
 ```
