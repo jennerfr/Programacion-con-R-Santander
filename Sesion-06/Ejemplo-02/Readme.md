@@ -44,9 +44,11 @@ title(main = "Función de Autocorrelación Muestral",
 set.seed(2)
 x <- w <- rnorm(1000)
 for(t in 2:1000) x[t] <- x[t-1] + w[t]
+
 plot(x, type = "l", main = "Caminata Aleatoria Simulada", 
      xlab = "t", ylab = expression(x[t]), 
      sub = expression(x[t]==x[t-1]+w[t]))
+     
 acf(x, main = "")
 title(main = "Correlograma para la caminata aleatoria simulada", 
       sub = expression(x[t]==x[t-1]+w[t]))
