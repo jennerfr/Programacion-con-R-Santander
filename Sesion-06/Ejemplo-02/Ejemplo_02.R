@@ -1,4 +1,4 @@
-# Ejemplo 2. Modelos estocásticos básicos, modelos estacionarios y predicción
+# Ejemplo 2. Modelos estocásticos básicos y modelos estacionarios
 
 # Ruido Blanco y simulación en R
 
