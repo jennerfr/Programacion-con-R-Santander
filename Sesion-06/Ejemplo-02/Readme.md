@@ -2,7 +2,7 @@
 
 #### Objetivo
 
-- Estudiar algunos modelos estocásticos básicos, modelos estacionarios y realizar predicciones de algunas series de tiempo.
+- Estudiar algunos modelos estocásticos básicos y modelos estacionarios.
 
 #### Requisitos
 
