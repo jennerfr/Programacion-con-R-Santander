@@ -33,7 +33,6 @@ title(ylab = "Densidad", xlab = "Valores simulados de la distribución normal es
 ```
 
 ```R
-set.seed(2)
 acf(w, main = "")
 title(main = "Función de Autocorrelación Muestral", 
       sub = "Valores simulados de la distribución normal estandar")
