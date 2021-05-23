@@ -70,6 +70,7 @@ Correlograma de un proceso AR(1)
 
 ```R
 rho <- function(k, alpha) alpha^k
+
 plot(0:10, rho(0:10, 0.7), type = "h", ylab = "", xlab = "")
 title(main = "Correlograma para un proceso AR(1)",
       ylab = expression(rho[k] == alpha^k),
@@ -92,6 +93,7 @@ Un proceso AR(1) puede ser simulado en R como sigue:
 set.seed(1)
 x <- w <- rnorm(100)
 for(t in 2:100) x[t] <- 0.7 * x[t-1] + w[t]
+
 plot(x, type = "l", xlab = "", ylab = "")
 title(main = "Proceso AR(1) simulado",
       xlab = "Tiempo",
@@ -128,9 +130,11 @@ x.ar$ar + c(-2, 2)*sqrt(x.ar$asy.var)
 Global <- scan("global.txt")
 Global.ts <- ts(Global, st = c(1856, 1), end = c(2005, 12), fr = 12)
 Global.annual <- aggregate(Global.ts, FUN = mean)
+
 plot(Global.ts, xlab = "Tiempo", ylab = "Temperatura en °C", 
      main = "Serie de Temperatura Global",
      sub = "Serie mensual: Enero de 1856 a Diciembre de 2005")
+     
 plot(Global.annual, xlab = "Tiempo", ylab = "Temperatura en °C", 
      main = "Serie de Temperatura Global",
      sub = "Serie anual de temperaturas medias: 1856 a 2005")
@@ -141,6 +145,7 @@ mean(Global.annual)
 Global.ar <- ar(Global.annual, method = "mle")
 Global.ar$order
 Global.ar$ar
+
 acf(Global.ar$res[-(1:Global.ar$order)], lag = 50, main = "")
 title(main = "Correlograma de la serie de residuales",
       sub = "Modelo AR(4) ajustado a la serie de temperaturas globales anuales")
