@@ -153,9 +153,9 @@ title(main = "Correlograma de la serie de residuales",
 
 **Modelos MA(q)**
 
-Ejemplos en R: Correlograma y Simulación
+Ejemplos en `R`: Correlograma y Simulación
 
-Función en R para calcular la Función de Autocorrelación
+Función en `R` para calcular la Función de Autocorrelación
 
 ```R
 rho <- function(k, beta){
@@ -174,6 +174,7 @@ Correlograma para un proceso MA(3)
 beta <- c(1, 0.7, 0.5, 0.2)
 rho.k <- rep(1, 10)
 for(k in 1:10) rho.k[k] <- rho(k, beta)
+
 plot(0:10, c(1, rho.k), ylab = expression(rho[k]), xlab = "lag k", type = "h",
      sub = expression(x[t] == w[t] + 0.7*w[t-1] + 0.5*w[t-2] + 0.2*w[t-3]),
      main = "Función de autocorrelación para un proceso MA(3)")
@@ -186,6 +187,7 @@ Correlograma para otro proceso MA(3)
 beta <- c(1, -0.7, 0.5, -0.2)
 rho.k <- rep(1, 10)
 for(k in 1:10) rho.k[k] <- rho(k, beta)
+
 plot(0:10, c(1, rho.k), ylab = expression(rho[k]), xlab = "lag k", type = "h",
      sub = expression(x[t] == w[t] - 0.7*w[t-1] + 0.5*w[t-2] - 0.2*w[t-3]),
      main = "Función de autocorrelación para un proceso MA(3)")
@@ -227,6 +229,7 @@ Simulación y ajuste
 ```R
 set.seed(1)
 x <- arima.sim(n = 10000, list(ar = -0.6, ma = 0.5))
+
 plot(x[1:100], type = "l", xlab = "")
 title(main = "Serie simulada", xlab = "Tiempo", 
       sub = expression(x[t] == -0.6*x[t-1] + w[t] + 0.5*w[t-1]))
