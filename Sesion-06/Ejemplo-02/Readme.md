@@ -26,7 +26,7 @@ Para ilustrar mediante simulación como las muestras pueden diferir de sus pobla
 
 ```R
 x <- seq(-3, 3, length = 1000)
-hist(rnorm(100), prob = T, ylab = "", xlab = "", main = "") 
+hist(w, prob = T, ylab = "", xlab = "", main = "") 
 points(x, dnorm(x), type = "l")
 title(ylab = "Densidad", xlab = "Valores simulados de la distribución normal estandar",
       main = "Comparación de una muestra con su población subyacente")
@@ -34,7 +34,7 @@ title(ylab = "Densidad", xlab = "Valores simulados de la distribución normal es
 
 ```R
 set.seed(2)
-acf(rnorm(100), main = "")
+acf(w, main = "")
 title(main = "Función de Autocorrelación Muestral", 
       sub = "Valores simulados de la distribución normal estandar")
 ```
