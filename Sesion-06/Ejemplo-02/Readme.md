@@ -42,6 +42,7 @@ title(main = "Función de Autocorrelación Muestral",
 #### Caminata aleatoria y simulación en R
 
 ```R
+set.seed(2)
 x <- w <- rnorm(1000)
 for(t in 2:1000) x[t] <- x[t-1] + w[t]
 plot(x, type = "l", main = "Caminata Aleatoria Simulada", 
