@@ -19,4 +19,4 @@ En esta sesión estudiaremos temas relacionados con los siguientes puntos
 
 #### Postwork de la sesión 5:
 
-- [Postwork](https://github.com/beduExpert/Programacion-con-R-Santander/tree/master/Sesion-05/Postwork)
+- [Postwork](https://github.com/jennerfr/Programacion-con-R-Santander/tree/master/Sesion-05/Postwork)
