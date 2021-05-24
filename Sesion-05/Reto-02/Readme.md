@@ -1,7 +1,7 @@
 
 # Reto 2. Máquinas de vectores de soporte
 
-### OBJETIVO 
+#### OBJETIVO 
 
 - Crear un conjunto de entrenamiento y uno de prueba a partir de un conjunto de datos dado
 - Ajustar máquinas de vectores de soporte a un conjunto de entrenamiento
