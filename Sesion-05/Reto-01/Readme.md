@@ -1,4 +1,4 @@
-# Reto 1. Regresión lineal múltiple
+# Reto 1. Regresión lineal múltiple (Ventas y presupuestos de publicidad)
 
 #### OBJETIVO 
 
