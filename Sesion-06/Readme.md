@@ -12,7 +12,7 @@ En esta sesión estudiaremos temas relacionados con los siguientes puntos:
 #### Los ejemplos y retos de esta sesión 6 son los siguientes:
 
 - [Ejemplo 1](https://github.com/jennerfr/Programacion-con-R-Santander/tree/master/Sesion-06/Ejemplo-01) Ejemplos de series de tiempo y técnicas descriptivas
-- [Ejemplo 2](https://github.com/jennerfr/Programacion-con-R-Santander/tree/master/Sesion-06/Ejemplo-02) Modelos estocásticos básicos, modelos estacionarios y predicción
+- [Ejemplo 2](https://github.com/jennerfr/Programacion-con-R-Santander/tree/master/Sesion-06/Ejemplo-02) Modelos estocásticos básicos y modelos estacionarios
 - [Reto 1](https://github.com/jennerfr/Programacion-con-R-Santander/tree/master/Sesion-06/Reto-01) Proceso AR(1)
 - [Ejemplo 3](https://github.com/jennerfr/Programacion-con-R-Santander/tree/master/Sesion-06/Ejemplo-03) Modelos no estacionarios y predicción
 - [Reto 2](https://github.com/jennerfr/Programacion-con-R-Santander/tree/master/Sesion-06/Reto-02) Proceso ARIMA(1, 1, 1)
